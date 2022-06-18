@@ -14,8 +14,8 @@ fetch(url)
             let RandomQuotes = Math.floor(Math.random() * data.length);
             let Quotes = (data[RandomQuotes].text);
             let Author = (data[RandomQuotes].author);
-            document.getElementById("quote").innerHTML = Quotes;
-            document.getElementById("author").innerHTML = "- " + Author;
+            document.querySelector(".quote").innerHTML = '"' + Quotes + '"';
+            document.querySelector(".author").innerHTML = "- " + Author + ".";
         })
 
     });
